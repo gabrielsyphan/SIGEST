@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <AnchorPane fx:id="contentBody" layoutX="303.0" layoutY="156.0" prefHeight="554.0" prefWidth="688.0">
+         <children>
+            <ImageView fitHeight="207.0" fitWidth="816.0" layoutX="-117.0" layoutY="-60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/images/profile.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="162.0" text="Lucas Gabriel" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="211.0" prefHeight="15.0" prefWidth="618.0" text="Desenvolvedor de aplicações Web e Mobile, especialista em mapas, gestor de tráfego, dono da MoreMedia," textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="228.0" prefHeight="15.0" prefWidth="618.0" text="criador do Orditi Web, Geo-Report, GovTrack, Eletter e muitos outros." textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="162.0" layoutY="167.0" prefHeight="15.0" prefWidth="515.0" text="Gabriel Syphan / Fullstack Developer" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="490.0" prefHeight="15.0" prefWidth="618.0" text="Portfólio: www.syphan.com.br" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="510.0" prefHeight="15.0" prefWidth="618.0" text="Github: www.github.com/gabrielsyphan" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="256.0" prefHeight="15.0" prefWidth="618.0" text="Sistema desenvolvido para a matéria de Linguagem de programação pelo Professor Alexandre no  Instituto Federal" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="271.0" prefHeight="15.0" prefWidth="618.0" text="de Alagoas - IFAL Campus Maceió" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="45.0" layoutY="189.0" prefHeight="13.0" prefWidth="605.0" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="968.0" onMouseClicked="#exit" prefHeight="31.0" prefWidth="33.0" style="-fx-background-color: #587d9f; -fx-cursor: hand;">
+         <children>
+            <Label layoutX="11.0" layoutY="2.0" text="X" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="935.0" onMouseClicked="#minimize" prefHeight="31.0" prefWidth="33.0" style="-fx-border-color: #587d9f; -fx-cursor: hand;">
+         <children>
+            <Label layoutX="13.0" layoutY="2.0" text="-" textFill="#587d9f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="294.0" layoutY="36.0" prefHeight="110.0" prefWidth="706.0" style="-fx-background-color: #f9f9f9;">
+         <children>
+            <Label layoutX="45.0" layoutY="32.0" text="Sistema de gerenciamento de estoque" textFill="#4c4c4c">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="67.0" text="/Sobre" textFill="#4c4c4c" />
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="296.0" style="-fx-background-color: #587d9f;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="194.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="nav-logo">
+               <image>
+                  <Image url="@assets/images/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#homePage" prefHeight="58.0" prefWidth="297.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Início" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <graphic>
+                  <AnchorPane styleClass="icon-home" stylesheets="@assets/css/styles.css" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#inventoryPage" prefHeight="58.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Estoque" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <AnchorPane styleClass="icon-inventory" stylesheets="@assets/css/styles.css" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#helpPage" prefHeight="58.0" prefWidth="298.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Ajuda" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <AnchorPane styleClass="icon-help" stylesheets="@assets/css/styles.css" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#aboutPage" prefHeight="58.0" prefWidth="297.0" style="-fx-background-color: #547798; -fx-cursor: hand;" text="Sobre" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <AnchorPane styleClass="icon-about" stylesheets="@assets/css/styles.css" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="58.0" prefWidth="301.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <AnchorPane styleClass="icon-exit" stylesheets="@assets/css/styles.css" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>
